@@ -1,0 +1,28 @@
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #594b4a;
+}
+
+svg {
+  stroke: transparent;
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.red {
+  background-color: red;
+}
