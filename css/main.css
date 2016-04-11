@@ -23,21 +23,25 @@ svg {
   opacity: .2;
   transition: all 500ms;
 }
+
+
 .puck{
-  position: relative;
+position: relative;
  transform: translateX(-1000px);
 
 }
 .puck-in {
   animation: pucker 500ms ease alternate forwards;
 
+
 }
 
 @keyframes pucker {
 
   0%{
-      transform: translateY(-2000px);
-      transform: translateX(-500px);
+      transform: translateX(-500px) translateY(-1030px);
+
+
   }
 
   50%{
@@ -45,21 +49,30 @@ svg {
 }
 
   100% {
-    transform: translateY(500px);
-     transform: translateX(0px);
+    transform: translateY(30px) translateX(0px);
+
   }
 }
 
-.yellow {
-  background: yellow;
+.grow-leaf {
+animation: hockeyleaf 200ms ease-in;
+transform-origin: center center;
 }
 
-.red {
-  background-color: red;
+@keyframes hockeyleaf {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
 
 .bag-wiggle {
-  animation: bag-wiggle 2000ms alternate infinite forwards;
+  animation: bag-wiggle 500ms alternate infinite forwards;
   transform-origin: center bottom;
 }
 
@@ -67,13 +80,10 @@ svg {
 
   0%{
     transform: rotate(-5deg);
-    fill: #000;
   }
-
-
 
   100% {
     transform: rotate(5deg);
-    fill: #000;
+
   }
 }

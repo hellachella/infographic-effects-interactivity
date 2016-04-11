@@ -3,9 +3,10 @@ var $hockey = $('.hockey');
 var $body = $('body');
 var $aPlus = $('.aPlus');
 var $puck = $('.puck');
+var $hockeyLeaf = $('.hockey-leaf');
 
 $bag.on('mouseover', function() {
-  $bag.addClass('bag-wiggle');
+  $bag.toggleClass('bag-wiggle');
 });
 
 $bag.on('mouseout', function() {
@@ -25,6 +26,7 @@ $hockey.on('mouseout', function () {
 
 $hockey.on('click', function () {
   $puck.toggleClass('puck-in');
+  $hockeyLeaf.toggleClass('grow-leaf')
 });
 
 
