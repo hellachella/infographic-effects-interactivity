@@ -19,10 +19,61 @@ svg {
   padding: 1em;
 }
 
+.fade {
+  opacity: .2;
+  transition: all 500ms;
+}
+.puck{
+  position: relative;
+ transform: translateX(-1000px);
+
+}
+.puck-in {
+  animation: pucker 500ms ease alternate forwards;
+
+}
+
+@keyframes pucker {
+
+  0%{
+      transform: translateY(-2000px);
+      transform: translateX(-500px);
+  }
+
+  50%{
+  fill: #f00;
+}
+
+  100% {
+    transform: translateY(500px);
+     transform: translateX(0px);
+  }
+}
+
 .yellow {
   background: yellow;
 }
 
 .red {
   background-color: red;
+}
+
+.bag-wiggle {
+  animation: bag-wiggle 2000ms alternate infinite forwards;
+  transform-origin: center bottom;
+}
+
+@keyframes bag-wiggle {
+
+  0%{
+    transform: rotate(-5deg);
+    fill: #000;
+  }
+
+
+
+  100% {
+    transform: rotate(5deg);
+    fill: #000;
+  }
 }
