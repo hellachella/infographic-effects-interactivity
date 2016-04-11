@@ -20,8 +20,8 @@ svg {
 }
 
 .fade {
-  opacity: .2;
-  transition: all 500ms;
+  opacity: 0;
+  transition: all 5000ms;
 }
 
 
@@ -31,7 +31,7 @@ position: relative;
 
 }
 .puck-in {
-  animation: pucker 500ms ease alternate forwards;
+  animation: pucker 500ms ease-in alternate forwards;
 
 
 }
@@ -59,14 +59,22 @@ animation: hockeyleaf 200ms ease-in;
 transform-origin: center center;
 }
 
+.hockey-leaf{
+  transform: rotate(0deg);
+}
+
 @keyframes hockeyleaf {
 
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(1);
+  }
+
+  50%{
+    transform: rotate(180deg) scale(1.2);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(1);
   }
 }
 
