@@ -63,10 +63,14 @@ $thumbgirl.on('click', function () {
   $thumblines.toggleClass('show-lines');
 });
 
+$thumbgirl.on('mouseover', function () {
+  fadeOut($(this));
+});
+
 function fadeOut (exclude) {
   $('svg').not(exclude).addClass('fade');
 };
 
-function fadeIn() {
+function fadeIn () {
   $('svg').removeClass('fade');
 };

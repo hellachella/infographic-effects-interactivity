@@ -13,6 +13,10 @@ body {
   background-color: #3f4354;
 }
 
+h1 {
+  display: none;
+}
+
 svg {
   stroke: transparent;
   display: block;
@@ -72,7 +76,6 @@ svg {
     transform: rotate(360deg) scale(1);
   }
 }
-
 
 .bag-wiggle {
   animation: bag-wiggle 500ms alternate infinite forwards;
