@@ -97,19 +97,19 @@ svg {
 
 @keyframes thumbspin {
 
-   0% {
+  0% {
     transform: rotate(0deg) scale(1);
   }
 
   50% {
     transform: rotate(0) scale(3);
+    fill: #fff;
   }
 
   100% {
     transform: rotate(360deg) scale(1);
   }
 }
-
 
 .baby {
   transform: translateY(-48px) translateX(30px);

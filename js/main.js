@@ -32,10 +32,9 @@ $slide.on('click', function () {
   $babywhoosh.toggleClass('whooshline');
 });
 
-
 // thumb
 
-$thumbgirl.on('click', function() {
+$thumbgirl.on('click', function () {
   $thumb.toggleClass('thumb-grow');
-})
+});
 
