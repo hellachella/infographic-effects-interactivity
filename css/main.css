@@ -94,7 +94,8 @@ svg {
 }
 
 .slide-down {
-  animation: slide 500ms forwards;
+  animation: slide 700ms ease-out forwards;
+  transform-origin: center center;
 }
 
 .babywhoosh {
@@ -102,7 +103,7 @@ svg {
 }
 
 .whooshline {
-  animation: babywhoosh 500ms;
+  animation: babywhoosh 1000ms ease-in;
 }
 
 @keyframes babywhoosh {
@@ -111,11 +112,11 @@ svg {
     opacity: 0;
   }
 
-  10% {
+  20% {
     opacity: 0;
   }
 
-  30% {
+  75% {
     opacity: 1;
   }
 
@@ -127,10 +128,14 @@ svg {
 @keyframes slide {
 
   0% {
-    transform: translateY(-50px) translateX(30px);
+    transform: translateY(-50px) translateX(30px) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-50px) translateX(25px) rotate(10deg);
   }
 
   100% {
-    transform: translateY(60px) translateX(-85px);
+    transform: translateY(60px) translateX(-90px) rotate(6deg);
   }
 }
