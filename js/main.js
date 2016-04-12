@@ -11,7 +11,7 @@ var $babyparent = $('.slidebaby');
 var $babywhoosh = $('.babywhoosh');
 var $thumb = $('.thumb-print');
 var $thumbgirl = $('.thumbgirl');
-var $thumbhover = $('.thumbhover')
+var $thumbhover = $('.thumbhover');
 var $thumblines = $('.thumb-lines');
 var fadeOut;
 var fadeIn;
@@ -32,7 +32,7 @@ $bag.on('mouseout', function () {
 $hockey.on('click', function () {
   $puck.toggleClass('puck-in');
   $hockeyLeaf.toggleClass('grow-leaf');
-  $hockeySwoosh.toggleClass('show-swoosh')
+  $hockeySwoosh.toggleClass('show-swoosh');
 });
 
 $hockey.on('mouseover', function () {
