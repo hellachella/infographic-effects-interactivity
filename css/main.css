@@ -22,7 +22,7 @@ svg {
 
 .fade {
   opacity: .2;
-  transition: all 2000ms ease-out;
+  transition: all 2200ms ease-out;
 }
 
 .puck {
@@ -73,6 +73,7 @@ svg {
   }
 }
 
+
 .bag-wiggle {
   animation: bag-wiggle 500ms alternate infinite forwards;
   transform-origin: center bottom;
@@ -91,7 +92,7 @@ svg {
 }
 
 .thumb-grow {
-  animation: thumbspin 400ms ease-in;
+  animation: thumbspin 400ms ease-in forwards;
   transform-origin: center center;
 }
 
@@ -109,6 +110,16 @@ svg {
   100% {
     transform: rotate(360deg) scale(1);
   }
+}
+
+.thumb-lines {
+  opacity: 0;
+  transition: 500ms all;
+  transition-delay: 300ms;
+}
+
+.show-lines {
+  opacity: 1;
 }
 
 .baby {
