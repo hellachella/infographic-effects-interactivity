@@ -29,6 +29,60 @@ svg {
   transition: all 2200ms ease-out;
 }
 
+.hockey-swoosh {
+  opacity: 0;
+
+}
+
+.show-swoosh {
+  animation: swoosh 500ms forwards ease-in;
+  animation-delay: 500ms;
+}
+
+@keyframes swoosh {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: .2;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.hockey-eyes {
+  animation: blink 1000ms ease-in ;
+}
+
+@keyframes blink {
+
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0;
+  }
+
+
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 1;
+  }
+
+  100%{ opacity: 1;
+}
+}
+
+
 .puck {
   position: relative;
   transform: translateX(-1000px);
