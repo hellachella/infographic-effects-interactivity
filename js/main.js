@@ -18,15 +18,6 @@ $bag.on('mouseout', function () {
 });
 
 // hockey
-$hockey.on('mouseover', function () {
-  $bag.addClass('fade');
-  $aPlus.addClass('fade');
-});
-
-$hockey.on('mouseout', function () {
-  $bag.removeClass('fade');
-  $aPlus.removeClass('fade');
-});
 
 $hockey.on('click', function () {
   $puck.toggleClass('puck-in');
