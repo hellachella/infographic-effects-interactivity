@@ -95,3 +95,44 @@ transform-origin: center center;
 
   }
 }
+
+.baby {
+   transform: translateY(-50px) translateX(40px);
+}
+
+.slide-down {
+  animation: slide 500ms forwards;
+}
+
+.babywhoosh{
+  opacity: 0;
+}
+.whooshline{
+  animation: babywhoosh 1s;
+}
+
+@keyframes babywhoosh {
+  0% {
+    opacity: 0;
+  }
+  10%{
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-50px) translateX(40px);
+  }
+
+  100%{
+     transform: translateY(60px) translateX(-85px);
+  }
+}
