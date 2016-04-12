@@ -31,13 +31,13 @@ svg {
 }
 
 .puck-in {
-  animation: pucker 500ms ease-in alternate forwards;
+  animation: pucker 800ms ease-in alternate forwards;
 }
 
 @keyframes pucker {
 
   0% {
-    transform: translateX(-500px) translateY(-1030px);
+    transform: translateX(-1000px) translateY(-1030px);
   }
 
   50% {
@@ -89,6 +89,27 @@ svg {
 
   }
 }
+
+.thumb-grow {
+  animation: thumbspin 400ms ease-in;
+  transform-origin: center center;
+}
+
+@keyframes thumbspin {
+
+   0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(0) scale(3);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
 
 .baby {
   transform: translateY(-48px) translateX(30px);

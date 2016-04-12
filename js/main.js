@@ -7,6 +7,8 @@ var $hockeyLeaf = $('.hockey-leaf');
 var $slide = $('.slidebaby');
 var $baby = $('.baby');
 var $babywhoosh = $('.babywhoosh');
+var $thumb = $('.thumb-print');
+var $thumbgirl = $('.thumbgirl');
 
 // bag
 $bag.on('mouseover', function () {
@@ -29,3 +31,11 @@ $slide.on('click', function () {
   $baby.toggleClass('slide-down');
   $babywhoosh.toggleClass('whooshline');
 });
+
+
+// thumb
+
+$thumbgirl.on('click', function() {
+  $thumb.toggleClass('thumb-grow');
+})
+
