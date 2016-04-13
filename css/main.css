@@ -186,27 +186,27 @@ svg {
 @keyframes sayno {
 
   0% {
-    transform: scale(0);
+    transform: scale(0) rotate(0);
   }
 
-  80% {
-    transform: scale(3);
+  40% {
+    transform: scale(2.8) rotate(0);
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(1) rotate(-360deg);
   }
 }
 
 .shoo-drugs {
-  animation: shoo 250ms ease forwards;
-
+  animation: shoo 200ms ease-out;
+  animation-delay: 100ms;
 }
 
 @keyframes shoo {
 
   0% {
-    transform: translateX(0);
+    transform: translateX(0) translateY(0);
     opacity: 1;
   }
 
@@ -215,7 +215,7 @@ svg {
   }
 
   100% {
-    transform: translateX(80px);
+    transform: translateX(80px) translateY(0);
     opacity: 0;
   }
 }
