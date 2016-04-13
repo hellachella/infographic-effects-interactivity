@@ -70,7 +70,8 @@ $babyparent.on('mouseout', function () {
 // drugs
 
 $parentDrugs.on('mouseover', function () {
-  $theDrugs.toggleClass('dropdrugs');
+  $theDrugs.addClass('dropdrugs');
+  fadeOut($(this));
 });
 
 $parentDrugs.on('click', function () {
