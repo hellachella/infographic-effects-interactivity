@@ -147,6 +147,74 @@ svg {
   }
 }
 
+/*Drugs*/
+.the-drugs {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 1000ms;
+  transform-origin: center center;
+}
+
+.dropdrugs {
+  animation: dropthedrugs 800ms forwards;
+}
+
+@keyframes dropthedrugs {
+
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    transform-origin: center center;
+  }
+}
+
+.drug-x {
+  transform: scale(0);
+  transform-origin: center center;
+}
+
+.show-x {
+  animation: sayno 300ms forwards ease-out;
+}
+
+@keyframes sayno {
+
+  0% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.shoo-drugs {
+  animation: shoo 1000ms ease-out;
+
+}
+
+@keyframes shoo {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+}
+
+/* thumbs */
+
 .thumb-grow {
   animation: thumbspin 400ms ease-in forwards;
   transform-origin: center center;

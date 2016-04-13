@@ -1,18 +1,26 @@
 var $bag = $('.shopping-bag');
+
 var $hockey = $('.hockey');
-var $body = $('body');
-var $aPlus = $('.aplus');
-var $puck = $('.puck');
 var $hockeyLeaf = $('.hockey-leaf');
 var $hockeySwoosh = $('.hockey-swoosh');
-var $slide = $('.slidebaby');
-var $baby = $('.baby');
-var $babyparent = $('.slidebaby');
-var $babywhoosh = $('.babywhoosh');
+var $puck = $('.puck');
+
+var $aPlus = $('.aplus');
+
 var $thumb = $('.thumb-print');
 var $thumbgirl = $('.thumbgirl');
 var $thumbhover = $('.thumbhover');
 var $thumblines = $('.thumb-lines');
+
+var $parentDrugs = $('.parent-drugs');
+var $bigX = $('.drug-x');
+var $theDrugs = $('.the-drugs')
+
+var $slide = $('.slidebaby');
+var $baby = $('.baby');
+var $babyparent = $('.slidebaby');
+var $babywhoosh = $('.babywhoosh');
+
 var fadeOut;
 var fadeIn;
 
@@ -58,6 +66,17 @@ $babyparent.on('mouseover', function () {
 $babyparent.on('mouseout', function () {
   fadeIn();
 });
+
+// drugs
+
+$parentDrugs.on('mouseover', function () {
+  $theDrugs.toggleClass('dropdrugs');
+});
+
+$parentDrugs.on('click', function () {
+  $bigX.toggleClass('show-x');
+  $theDrugs.toggleClass('shoo-drugs');
+})
 
 // thumb
 
