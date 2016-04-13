@@ -190,7 +190,7 @@ svg {
   }
 
   80% {
-    transform: scale(1.5);
+    transform: scale(3);
   }
 
   100% {
@@ -199,7 +199,7 @@ svg {
 }
 
 .shoo-drugs {
-  animation: shoo 1000ms ease forwards;
+  animation: shoo 250ms ease forwards;
 
 }
 
@@ -215,7 +215,7 @@ svg {
   }
 
   100% {
-    transform: translateX(300px);
+    transform: translateX(80px);
     opacity: 0;
   }
 }
@@ -234,7 +234,7 @@ svg {
   }
 
   50% {
-    transform: rotate(0) scale(3);
+    transform: rotate(0) scale(5);
     fill: #fff;
   }
 
