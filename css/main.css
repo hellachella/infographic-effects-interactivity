@@ -119,6 +119,7 @@ svg {
 
   0% {
     transform: rotate(0deg) scale(1);
+      transform-origin: center center;
   }
 
   50% {
