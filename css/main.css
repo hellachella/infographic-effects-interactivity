@@ -181,6 +181,7 @@ svg {
 
 .show-x {
   animation: sayno 300ms forwards ease-out;
+  transform-origin: center center;
 }
 
 @keyframes sayno {
