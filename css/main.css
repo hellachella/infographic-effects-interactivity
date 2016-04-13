@@ -124,10 +124,12 @@ svg {
 
   50% {
     transform: rotate(180deg) scale(1.2);
+    transform-origin: center center;
   }
 
   100% {
     transform: rotate(360deg) scale(1);
+    transform-origin: center center;
   }
 }
 
