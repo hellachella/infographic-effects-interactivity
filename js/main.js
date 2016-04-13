@@ -14,7 +14,7 @@ var $thumblines = $('.thumb-lines');
 
 var $parentDrugs = $('.parent-drugs');
 var $bigX = $('.drug-x');
-var $theDrugs = $('.the-drugs')
+var $theDrugs = $('.the-drugs');
 
 var $slide = $('.slidebaby');
 var $baby = $('.baby');
@@ -77,7 +77,7 @@ $parentDrugs.on('mouseover', function () {
 $parentDrugs.on('click', function () {
   $bigX.toggleClass('show-x');
   $theDrugs.toggleClass('shoo-drugs');
-})
+});
 
 // thumb
 

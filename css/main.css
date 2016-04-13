@@ -147,7 +147,8 @@ svg {
   }
 }
 
-/*Drugs*/
+/* Drugs */
+
 .the-drugs {
   opacity: 0;
   transform: translateY(-100px);
@@ -191,6 +192,7 @@ svg {
   80% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -202,6 +204,7 @@ svg {
 }
 
 @keyframes shoo {
+
   0% {
     transform: translateX(0);
     opacity: 1;
