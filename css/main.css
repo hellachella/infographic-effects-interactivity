@@ -108,12 +108,12 @@ svg {
 
 .grow-leaf {
   animation: hockeyleaf 200ms ease-in;
-  transform-origin: center center;
+  transform-origin: -21.55px -24.012px;
 }
 
 .hockey-leaf {
   transform: rotate(0deg);
-  transform-origin: 21.55px 24.012px;
+  transform-origin: -21.55px -24.012px;
 }
 
 @keyframes hockeyleaf {
