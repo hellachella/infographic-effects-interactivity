@@ -113,7 +113,7 @@ svg {
 
 .hockey-leaf {
   transform: rotate(0deg);
-  transform-origin: -21.55px 24.012px;
+  transform-origin: 21.55px 24.012px;
 }
 
 @keyframes hockeyleaf {
