@@ -110,28 +110,27 @@ svg {
   animation: hockeyleaf 200ms ease-in;
 }
 
-.hockey-leaf {
+/* .hockey-leaf {
   transform: rotate(0deg);
 
 
-}
+} */
 
 @keyframes hockeyleaf {
 
 
   0% {
-    transform: rotate(0deg) scale(1);
-    transform-origin: 21.55px 24.012px;
+    transform: scale(1);
 
   }
 
   50% {
-    transform: rotate(180deg) scale(1.2);
+    transform: scale(1.2);
 
   }
 
   100% {
-    transform: rotate(360deg) scale(1);
+    transform: scale(1);
 
   }
 }
