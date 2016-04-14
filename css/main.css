@@ -112,7 +112,7 @@ svg {
 
 .hockey-leaf {
   transform: rotate(0deg);
-  transform-origin: 21.55px 24.012px;
+
 
 }
 
@@ -121,6 +121,7 @@ svg {
 
   0% {
     transform: rotate(0deg) scale(1);
+    transform-origin: 21.55px 24.012px;
 
   }
 
