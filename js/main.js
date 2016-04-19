@@ -6,6 +6,9 @@ var $hockeySwoosh = $('.hockey-swoosh');
 var $puck = $('.puck');
 
 var $aPlus = $('.aplus');
+var $mouseHand = $('.mouse-hand');
+var $monitor = $('.monitor');
+var $letterA = $('.letter-a');
 
 var $thumb = $('.thumb-print');
 var $thumbgirl = $('.thumbgirl');
@@ -41,9 +44,6 @@ $hockey.on('click', function () {
   $puck.toggleClass('puck-in');
   $hockeyLeaf.toggleClass('grow-leaf');
   $hockeySwoosh.toggleClass('show-swoosh');
-});
-
-$hockey.on('mouseover', function () {
   fadeOut($(this));
 });
 
@@ -53,15 +53,23 @@ $hockey.on('mouseout', function () {
   fadeIn();
 });
 
+// a+
+
+
+$aPlus.on('click', function () {
+  $monitor.toggleClass('shakescreen');
+  $letterA.toggleClass('animate-a');
+  $monitor.removeClass('mouse-move')
+});
+
+
 // baby
 $slide.on('click', function () {
   $baby.toggleClass('slide-down');
   $babywhoosh.toggleClass('whooshline');
-});
-
-$babyparent.on('mouseover', function () {
   fadeOut($(this));
 });
+
 
 $babyparent.on('mouseout', function () {
   fadeIn();
@@ -71,12 +79,12 @@ $babyparent.on('mouseout', function () {
 
 $parentDrugs.on('mouseover', function () {
   $theDrugs.addClass('dropdrugs');
-  fadeOut($(this));
 });
 
 $parentDrugs.on('click', function () {
   $bigX.toggleClass('show-x');
   $theDrugs.toggleClass('shoo-drugs');
+  fadeOut($(this));
 });
 
 // thumb
@@ -84,11 +92,10 @@ $parentDrugs.on('click', function () {
 $thumbhover.on('click', function () {
   $thumb.toggleClass('thumb-grow');
   $thumblines.toggleClass('show-lines');
-});
-
-$thumbhover.on('mouseover', function () {
   fadeOut($(this));
 });
+
+
 
 $thumbhover.on('mouseout', function () {
   fadeIn();

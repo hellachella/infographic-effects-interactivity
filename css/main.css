@@ -8,7 +8,7 @@ html {
   box-sizing: inherit;
 }
 
-.bag svg {
+.bag svg, .drugboy svg, .hockey{
   overflow: visible;
 }
 
@@ -30,7 +30,7 @@ svg {
 
 .fade {
   opacity: .2;
-  transition: all 2200ms ease-out;
+  transition: all 800ms ease-out;
 }
 
 .hockey-swoosh {
@@ -55,7 +55,7 @@ svg {
 }
 
 .hockey-eyes {
-  animation: blink 1000ms ease-in;
+  animation: blink 10000ms infinite ease-in;
 }
 
 @keyframes blink {
@@ -63,20 +63,26 @@ svg {
   0% {
     opacity: 1;
   }
-
-  25% {
+  1% {
+    opacity: 0;
+  }
+  2% {
+    opacity:0;
+  }
+  3% {
     opacity: 1;
   }
 
-  26% {
+  70% {
+    opacity: 1;
+  }
+  71% {
     opacity: 0;
   }
-
-  60% {
-    opacity: 0;
+  72% {
+    opacity:0;
   }
-
-  61% {
+  73% {
     opacity: 1;
   }
 
@@ -139,6 +145,95 @@ svg {
   }
 }
 
+/* a+ */
+
+.mouse-move {
+  animation: mousekid 10000ms infinite;
+}
+
+.letter-a{
+  opacity: 0;
+
+}
+
+
+
+.animate-a {
+  animation: apop 200ms forwards;
+}
+
+@keyframes apop {
+
+  0% {
+    transform: translateY(180px) translateX(50px);
+    opacity: 0;
+
+  }
+
+  100% {
+    transform: translateY(-180) translateX(-50px);
+    opacity: 1;
+  }
+}
+
+@keyframes mousekid {
+  0% {
+    transform: translateX(-10px);
+  }
+  10% {
+ transform: translateX(10px);
+}
+15% {
+  transform: translateX(8px);
+}
+20%{
+  transform: translateX(-13px);
+}
+30% {
+  transform: translateX(5px);
+}
+50% {
+  transform: translateX(-5px);
+}
+65%{
+  transform: translateX(-10px);
+}
+80% {
+  transform: translateX(10px);
+}
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.shakescreen {
+  animation: shake 300ms alternate;
+  transform-origin: 226px 280px;
+}
+
+@keyframes shake {
+
+  0%{
+    transform: rotate(15deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+
+
+
+
+
 .bag-wiggle {
   animation: bag-wiggle 500ms alternate infinite forwards;
   transform-origin: 161px 430px;
@@ -166,7 +261,7 @@ svg {
 }
 
 .dropdrugs {
-  animation: dropthedrugs 800ms forwards;
+  animation: dropthedrugs 800ms ease forwards;
 }
 
 @keyframes dropthedrugs {
@@ -234,7 +329,7 @@ svg {
 
 .thumb-grow {
   animation: thumbspin 400ms ease-in forwards;
-  transform-origin: center center;
+  transform-origin: 65px 70px
 }
 
 @keyframes thumbspin {
