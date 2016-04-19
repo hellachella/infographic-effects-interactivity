@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+.bag svg {
+  overflow: visible;
+}
+
 body {
   /* background-color: #594b4a; */
   background-color: #3f4354;
@@ -112,7 +116,7 @@ svg {
 
 .hockey-leaf {
   transform: rotate(0deg);
-  transform-origin: center center;
+  transform-origin: 163px 232px;
 
 }
 
@@ -137,7 +141,7 @@ svg {
 
 .bag-wiggle {
   animation: bag-wiggle 500ms alternate infinite forwards;
-  transform-origin: center bottom;
+  transform-origin: 161px 430px;
 }
 
 @keyframes bag-wiggle {
@@ -181,12 +185,12 @@ svg {
 
 .drug-x {
   transform: scale(0);
-  transform-origin: center center;
+  transform-origin: 147px 85px;
 }
 
 .show-x {
   animation: sayno 300ms forwards ease-out;
-  transform-origin: center center;
+  transform-origin: 147px 85px;
 }
 
 @keyframes sayno {

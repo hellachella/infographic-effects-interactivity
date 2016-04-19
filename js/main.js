@@ -101,3 +101,5 @@ function fadeOut (exclude) {
 function fadeIn () {
   $('svg').removeClass('fade');
 };
+
+
