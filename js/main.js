@@ -28,7 +28,7 @@ var fadeOut;
 var fadeIn;
 
 // bag
-$bag.on('mouseover', function () {
+$bag.on('click', function () {
   $bag.toggleClass('bag-wiggle');
   fadeOut($(this).parents('svg'));
 });
@@ -59,7 +59,8 @@ $hockey.on('mouseout', function () {
 $aPlus.on('click', function () {
   $monitor.toggleClass('shakescreen');
   $letterA.toggleClass('animate-a');
-  $monitor.removeClass('mouse-move')
+  $monitor.removeClass('mouse-move');
+  fadeOut($(this));
 });
 
 

@@ -30,7 +30,7 @@ svg {
 
 .fade {
   opacity: .2;
-  transition: all 800ms ease-out;
+  transition:  800ms ease-out;
 }
 
 .hockey-swoosh {
