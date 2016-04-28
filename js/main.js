@@ -5,10 +5,12 @@ var $hockeyLeaf = $('.hockey-leaf');
 var $hockeySwoosh = $('.hockey-swoosh');
 var $puck = $('.puck');
 
+
 var $aPlus = $('.aplus');
 var $mouseHand = $('.mouse-hand');
 var $monitor = $('.monitor');
 var $letterA = $('.letter-a');
+var $kidputer = $('.kidputer');
 
 var $thumb = $('.thumb-print');
 var $thumbgirl = $('.thumbgirl');
@@ -24,8 +26,20 @@ var $baby = $('.baby');
 var $babyparent = $('.slidebaby');
 var $babywhoosh = $('.babywhoosh');
 
+var $howDoes = $('.how-does')
+
 var fadeOut;
 var fadeIn;
+
+//Title
+
+$howDoes.on('mouseover', function () {
+  $howDoes.addClass('grow-letter');
+});
+
+$howDoes.on('animationend', function() {
+  $howDoes.removeClass('grow-letter');
+})
 
 // bag
 $bag.on('click', function () {
@@ -60,7 +74,14 @@ $aPlus.on('click', function () {
   $monitor.toggleClass('shakescreen');
   $letterA.toggleClass('animate-a');
   $monitor.removeClass('mouse-move');
+});
+
+$kidputer.on('click', function () {
   fadeOut($(this));
+});
+
+$kidputer.on('mouseout', function () {
+  fadeIn();
 });
 
 
@@ -102,6 +123,7 @@ $thumbhover.on('mouseout', function () {
   fadeIn();
 });
 
+//Doesn't add the fadeout function to the active svg by excluding 'this'.
 function fadeOut (exclude) {
   $('svg').not(exclude).addClass('fade');
 };
