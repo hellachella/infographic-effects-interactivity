@@ -8,7 +8,7 @@ html {
   box-sizing: inherit;
 }
 
-.bag svg, .drugboy svg, .hockey{
+.bag svg, .drugboy svg, .hockey, .title svg {
   overflow: visible;
 }
 
@@ -27,6 +27,7 @@ h1 {
 }
 
 @keyframes grow {
+
   0% {
     transform: scale(1);
   }
@@ -34,9 +35,10 @@ h1 {
   50% {
     transform: scale(1.2);
   }
+
   100% {
-  transform: scale(1);
-}
+    transform: scale(1);
+  }
 }
 
 svg {
@@ -46,13 +48,10 @@ svg {
   padding: 1em;
 }
 
-
-
 .fade {
   opacity: .2;
-  transition:  800ms ease-out;
+  transition: 800ms ease-out;
 }
-
 
 .hockey-swoosh {
   opacity: 0;
@@ -84,12 +83,15 @@ svg {
   0% {
     opacity: 1;
   }
+
   1% {
     opacity: 0;
   }
+
   2% {
     opacity:0;
   }
+
   3% {
     opacity: 1;
   }
@@ -97,12 +99,15 @@ svg {
   70% {
     opacity: 1;
   }
+
   71% {
     opacity: 0;
   }
+
   72% {
     opacity:0;
   }
+
   73% {
     opacity: 1;
   }
@@ -149,7 +154,6 @@ svg {
 
 @keyframes hockeyleaf {
 
-
   0% {
     transform: rotate(0deg) scale(1);
 
@@ -172,12 +176,10 @@ svg {
   animation: mousekid 10000ms infinite;
 }
 
-.letter-a{
+.letter-a {
   opacity: 0;
 
 }
-
-
 
 .animate-a {
   animation: apop 200ms forwards;
@@ -198,30 +200,39 @@ svg {
 }
 
 @keyframes mousekid {
+
   0% {
     transform: translateX(-10px);
   }
+
   10% {
- transform: translateX(10px);
-}
-15% {
-  transform: translateX(8px);
-}
-20%{
-  transform: translateX(-13px);
-}
-30% {
-  transform: translateX(5px);
-}
-50% {
-  transform: translateX(-5px);
-}
-65%{
-  transform: translateX(-10px);
-}
-80% {
-  transform: translateX(10px);
-}
+    transform: translateX(10px);
+  }
+
+  15% {
+    transform: translateX(8px);
+  }
+
+  20% {
+    transform: translateX(-13px);
+  }
+
+  30% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  65% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
   100% {
     transform: translateX(-10px);
   }
@@ -234,7 +245,7 @@ svg {
 
 @keyframes shake {
 
-  0%{
+  0% {
     transform: rotate(15deg);
   }
 
@@ -245,15 +256,11 @@ svg {
   50% {
     transform: rotate(-5deg);
   }
+
   100% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 }
-
-
-
-
-
 
 .bag-wiggle {
   animation: bag-wiggle 500ms alternate infinite forwards;
@@ -350,7 +357,7 @@ svg {
 
 .thumb-grow {
   animation: thumbspin 400ms ease-in forwards;
-  transform-origin: 65px 70px
+  transform-origin: 65px 70px;
 }
 
 @keyframes thumbspin {

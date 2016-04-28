@@ -5,7 +5,6 @@ var $hockeyLeaf = $('.hockey-leaf');
 var $hockeySwoosh = $('.hockey-swoosh');
 var $puck = $('.puck');
 
-
 var $aPlus = $('.aplus');
 var $mouseHand = $('.mouse-hand');
 var $monitor = $('.monitor');
@@ -26,20 +25,65 @@ var $baby = $('.baby');
 var $babyparent = $('.slidebaby');
 var $babywhoosh = $('.babywhoosh');
 
-var $howDoes = $('.how-does')
+var $howDoes = $('.how-does');
+var $myPurchase = $('.my-purchase');
+var $helpKids = $('.help-kids');
+var $comment = $('.comment');
+var $appui = $('.appui');
+var $lesEnfants = $('.les-enfants');
 
 var fadeOut;
 var fadeIn;
 
-//Title
+// Title
 
 $howDoes.on('mouseover', function () {
   $howDoes.addClass('grow-letter');
 });
 
-$howDoes.on('animationend', function() {
+$howDoes.on('animationend', function () {
   $howDoes.removeClass('grow-letter');
-})
+});
+
+$myPurchase.on('mouseover', function () {
+  $myPurchase.addClass('grow-letter');
+});
+
+$myPurchase.on('animationend', function () {
+  $myPurchase.removeClass('grow-letter');
+});
+
+$helpKids.on('mouseover', function () {
+  $helpKids.addClass('grow-letter');
+});
+
+$helpKids.on('animationend', function () {
+  $helpKids.removeClass('grow-letter');
+});
+
+$comment.on('mouseover', function () {
+  $comment.addClass('grow-letter');
+});
+
+$comment.on('animationend', function () {
+  $comment.removeClass('grow-letter');
+});
+
+$appui.on('mouseover', function () {
+  $appui.addClass('grow-letter');
+});
+
+$appui.on('animationend', function () {
+  $appui.removeClass('grow-letter');
+});
+
+$lesEnfants.on('mouseover', function () {
+  $lesEnfants.addClass('grow-letter');
+});
+
+$lesEnfants.on('animationend', function () {
+  $lesEnfants.removeClass('grow-letter');
+});
 
 // bag
 $bag.on('click', function () {
@@ -69,7 +113,6 @@ $hockey.on('mouseout', function () {
 
 // a+
 
-
 $aPlus.on('click', function () {
   $monitor.toggleClass('shakescreen');
   $letterA.toggleClass('animate-a');
@@ -84,14 +127,12 @@ $kidputer.on('mouseout', function () {
   fadeIn();
 });
 
-
 // baby
 $slide.on('click', function () {
   $baby.toggleClass('slide-down');
   $babywhoosh.toggleClass('whooshline');
   fadeOut($(this));
 });
-
 
 $babyparent.on('mouseout', function () {
   fadeIn();
@@ -117,13 +158,11 @@ $thumbhover.on('click', function () {
   fadeOut($(this));
 });
 
-
-
 $thumbhover.on('mouseout', function () {
   fadeIn();
 });
 
-//Doesn't add the fadeout function to the active svg by excluding 'this'.
+//  Doesn't add the fadeout function to the active svg by excluding 'this'.
 function fadeOut (exclude) {
   $('svg').not(exclude).addClass('fade');
 };
@@ -131,5 +170,3 @@ function fadeOut (exclude) {
 function fadeIn () {
   $('svg').removeClass('fade');
 };
-
-
